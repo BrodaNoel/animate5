@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="animate5.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+		<canvas id="canvas" width="500" height="500" style="margin-top:10px; border:1px solid #000; position:relative; left:50%; margin-left:-250px"></canvas>
+
+		<script type="text/javascript">
+			animate5.init();
+			var idNoel = animate5.generarPersona({genero:'M', nombre: 'Noel'});
+			animate5.getPeopleById(idNoel).walk(100);
+		</script>
+		<div id="debug"></div>
+	</body>
+</html>
